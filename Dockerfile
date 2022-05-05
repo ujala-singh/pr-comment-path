@@ -9,7 +9,7 @@ LABEL "com.github.actions.color"="black"
 
 RUN apk add sudo
 RUN apk update
-chmod +x /usr/local/lib/ruby/gems/2.7.0
+RUN chmod +x /usr/local/lib/ruby/gems/2.7.0
 RUN sudo gem install octokit
 
 ADD entrypoint.sh /entrypoint.sh
